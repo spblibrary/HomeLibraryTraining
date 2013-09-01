@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db-changes>
+
+    <change>
+
+        <apply>
+            CREATE TABLE Items (
+				Id INTEGER PRIMARY KEY AUTOINCREMENT,
+				Title TEXT NOT NULL,
+				Author TEXT,
+				Year INTEGER,
+				Photo BLOB,
+				Category INTEGER NOT NULL
+			);
+        </apply>
+
+        <revert>
+            DROP TABLE Items;
+        </revert>
+    </change>
+
+</db-changes>

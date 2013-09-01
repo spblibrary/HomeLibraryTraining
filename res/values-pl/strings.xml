@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Home Library</string>
+    <string name="main_header">System domowej biblioteki</string>
+    <string name="add_new_item">Dodaj</string>
+    <string name="browse_items">Przeglądaj</string>
+    <string name="find_item">Znajdź element</string>
+    <string name="item_title">Tytuł</string>
+    <string name="item_author">Autor</string>
+    <string name="item_year">Rok: </string>
+    <string name="item_category">Kategoria: </string>
+    <string name="item_category_book">Książka</string>
+    <string name="item_category_map">Mapa</string>
+    <string name="add_item_button">Dodaj</string>
+    <string name="add_new_item_header">Dodaj nową pozycję w bibliotece:</string>
+    <string name="load_item_picture">Dodaj zdjęcie przedmiotu</string>
+    <string name="no_items_in_library">Brak pozycji w bibliotece.</string>
+    <string name="no_item_year">Brak</string>
+    <string name="new_item_successfully_added">Nowa pozycja została dodana do biblioteki.</string>
+    <string name="item_not_added">Pozycja nie została dodana, ponieważ nie podano tytułu.</string>
+    <string name="choose_photo_label">Wybierz zdjęcie z galerii:</string>
+    <string name="take_photo_button">Zrób zdjęcie</string>
+    <string name="no_camera_detected">Nie wykryto aparatu fotograficznego!</string>
+    <string name="camera_is_not_available">Aparat fotograficzny jest niedostępny!</string>
+    <string name="action_take_photo">Zrób zdjęcie</string>
+    <string name="action_scan_barcode">Skanuj kod kreskowy</string>
+    <string name="action_clear_database">Wyczyść bazę danych</string>
+    <string name="scanned_and_saved_correctly">Kod kreskowy został poprawnie zeskanowany i zapisany.</string>
+    <string name="no_scan_data">Nie otrzymano kodu kreskowego!</string>
+
+</resources>

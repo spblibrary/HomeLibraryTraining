@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Home Library</string>
+    <string name="main_header">Home books library</string>
+    <string name="add_new_item">Add new item</string>
+    <string name="browse_items">Browse items</string>
+    <string name="find_item">Find item</string>
+    <string name="item_title">Title</string>
+    <string name="item_author">Author</string>
+    <string name="item_year">Year: </string>
+    <string name="item_category">Category: </string>
+    <string name="item_category_book">Book</string>
+    <string name="item_category_map">Map</string>
+    <string name="add_item_button">Add</string>
+    <string name="add_new_item_header">Add new item to library:</string>
+    <string name="load_item_picture">Load item picture</string>
+    <string name="no_items_in_library">There is no items in library.</string>
+    <string name="no_item_year">None</string>
+    <string name="new_item_successfully_added">New item was successfully added.</string>
+    <string name="item_not_added">Item was not added, because title cannot be empty.</string>
+    <string name="choose_photo_label">Choose photo from galery:</string>
+    <string name="take_photo_button">Take photo</string>
+    <string name="no_camera_detected">There is no camera detected!</string>
+    <string name="camera_is_not_available">Camera is not available!</string>
+    <string name="action_take_photo">Take photo</string>
+    <string name="action_scan_barcode">Scan barcode</string>
+    <string name="action_clear_database">Clear database</string>
+    <string name="scanned_and_saved_correctly">Bar code was scanned and saved correctly.</string>
+    <string name="no_scan_data">No scan data received!</string>
+
+</resources>

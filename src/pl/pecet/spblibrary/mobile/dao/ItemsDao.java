@@ -28,11 +28,8 @@ public class ItemsDao {
 
 	private static final String COLUMN_PHOTO = "Photo";
 
-	private static final String COLUMN_BAR_CODE = "BarCode";
-
 	private static final String[] ALL_COLUMNS = { COLUMN_ID, COLUMN_TITLE,
-			COLUMN_AUTHOR, COLUMN_YEAR, COLUMN_PHOTO, COLUMN_CATEGORY,
-			COLUMN_BAR_CODE };
+			COLUMN_AUTHOR, COLUMN_YEAR, COLUMN_PHOTO, COLUMN_CATEGORY };
 
 	private final LibrarySQLiteOpenHelper dbHelper;
 
@@ -57,7 +54,6 @@ public class ItemsDao {
 		values.put(COLUMN_YEAR, item.getYear());
 		values.put(COLUMN_PHOTO, item.getPhoto());
 		values.put(COLUMN_CATEGORY, item.getCategory().getCode());
-		values.put(COLUMN_BAR_CODE, item.getBarCode());
 
 		final Long id = database.insert(TABLE_ITEMS, null, values);
 		return id;
@@ -91,24 +87,6 @@ public class ItemsDao {
 		return allItems;
 	}
 
-	public List<Item> findItems(final String barCode) {
-		final List<Item> items = new ArrayList<Item>();
-
-		final Cursor cursor = database.query(TABLE_ITEMS, ALL_COLUMNS,
-				COLUMN_BAR_CODE + "= ?", new String[] { barCode }, null, null,
-				null);
-
-		cursor.moveToFirst();
-		while (!cursor.isAfterLast()) {
-			final Item item = cursorToItem(cursor);
-			items.add(item);
-			cursor.moveToNext();
-		}
-		cursor.close();
-
-		return items;
-	}
-
 	private Item cursorToItem(final Cursor cursor) {
 		final Item item = new Item();
 
@@ -123,7 +101,6 @@ public class ItemsDao {
 		} else {
 			item.setCategory(ItemCategory.BOOK);
 		}
-		item.setBarCode(cursor.getString(6));
 
 		return item;
 	}

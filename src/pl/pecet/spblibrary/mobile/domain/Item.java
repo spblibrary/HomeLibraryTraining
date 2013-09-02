@@ -13,8 +13,6 @@ public class Item {
 
 	private ItemCategory category;
 
-	private String barCode;
-
 	public Long getId() {
 		return id;
 	}
@@ -61,13 +59,5 @@ public class Item {
 
 	public void setCategory(final ItemCategory category) {
 		this.category = category;
-	}
-
-	public String getBarCode() {
-		return barCode;
-	}
-
-	public void setBarCode(final String barCode) {
-		this.barCode = barCode;
 	}
 }
